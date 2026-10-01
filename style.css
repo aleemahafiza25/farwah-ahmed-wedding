@@ -6626,3 +6626,386 @@ body.site-unlocked {
     }
 
 }
+
+/* =========================================================
+   A NOTE FOR OUR GUESTS
+========================================================= */
+
+.guest-note-page {
+
+    position: relative;
+
+    min-height: 100svh;
+
+    padding:
+        110px 24px 135px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #e61e35 0%,
+            #820c1c 48%,
+            #550411 100%
+        );
+
+    color:
+        #F3E5CF;
+
+    overflow: visible;
+}
+
+
+.guest-note-inner {
+
+    width:
+        min(100%, 470px);
+
+    margin: auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* SMALL TOP TEXT */
+
+.guest-note-small {
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        10px;
+
+    letter-spacing:
+        .32em;
+
+    color:
+        #D5B16F;
+
+}
+
+
+/* TOP ORNAMENT */
+
+.guest-note-ornament {
+
+    margin:
+        18px 0 22px;
+
+    font-size:
+        13px;
+
+    color:
+        #B98A58;
+
+}
+
+
+/* HEADING */
+
+.guest-note-page h2 {
+
+    margin:
+        0;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            52px,
+            12vw,
+            76px
+        );
+
+    line-height:
+        1;
+
+    font-weight:
+        400;
+
+    color:
+        #F3DFC0;
+}
+
+
+/* DIVIDER */
+
+.guest-note-divider {
+
+    width:
+        155px;
+
+    margin:
+        28px auto 33px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+}
+
+
+.guest-note-divider span {
+
+    flex:
+        1;
+
+    height:
+        1px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #B98A58
+        );
+}
+
+
+.guest-note-divider span:last-of-type {
+
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            #B98A58
+        );
+}
+
+
+.guest-note-divider b {
+
+    font-size:
+        14px;
+
+    font-weight:
+        400;
+
+    color:
+        #B98A58;
+}
+
+
+/* MAIN MESSAGE */
+
+.guest-note-text {
+
+    width:
+        min(100%, 360px);
+
+    margin:
+        auto;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        20px;
+
+    line-height:
+        1.75;
+
+    color:
+        #E9D3B0;
+}
+
+
+/* FLORAL */
+
+.guest-note-floral {
+
+    width:
+        100%;
+
+    margin:
+        30px auto 20px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+}
+
+
+.guest-note-floral img {
+
+    width:
+        min(82%, 380px);
+
+    max-height:
+        100px;
+
+    object-fit:
+        contain;
+
+    opacity:
+        .9;
+
+    filter:
+        brightness(.78)
+        saturate(.82)
+        drop-shadow(
+            0 4px 12px
+            rgba(0,0,0,.18)
+        );
+}
+
+
+/* DUA */
+
+.guest-note-dua {
+
+    width:
+        min(100%, 300px);
+
+    margin:
+        10px auto 0;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        18px;
+
+    font-style:
+        italic;
+
+    line-height:
+        1.6;
+
+    color:
+        #F0DDBD;
+}
+
+
+/* FINAL FLOURISH */
+
+.guest-note-star {
+
+    margin-top:
+        27px;
+
+    font-size:
+        22px;
+
+    color:
+        #B98A58;
+}
+
+
+/* =========================================================
+   PAGE-END DIVIDER
+========================================================= */
+
+.guest-note-page .page-end-decoration {
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    bottom:
+        0;
+
+    width:
+        100%;
+
+    height:
+        0;
+
+    transform:
+        translateX(-50%);
+
+    z-index:
+        100;
+
+    pointer-events:
+        none;
+}
+
+
+.guest-note-page .page-end-decoration img {
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    bottom:
+        -42px;
+
+    width:
+        min(96vw, 1050px);
+
+    max-height:
+        145px;
+
+    transform:
+        translateX(-50%);
+
+    display:
+        block;
+
+    object-fit:
+        contain;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .guest-note-page {
+
+        padding:
+            95px 18px 125px;
+
+    }
+
+
+    .guest-note-text {
+
+        font-size:
+            18px;
+
+    }
+
+
+    .guest-note-floral img {
+
+        width:
+            100%;
+
+    }
+
+}
