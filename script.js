@@ -931,3 +931,72 @@ if (
     );
 
 }
+
+
+/* =====================================================
+   REPLAY INVITATION
+===================================================== */
+
+const replayButton =
+    document.getElementById("replayButton");
+
+
+/*
+   Make sure the browser does not restore
+   the previous scroll position after reload.
+*/
+
+if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+}
+
+
+/*
+   When the page reloads, start at the
+   very top again.
+*/
+
+window.addEventListener("load", () => {
+
+    window.scrollTo(0, 0);
+
+});
+
+
+/*
+   Replay button
+*/
+
+if (replayButton) {
+
+    replayButton.addEventListener(
+        "click",
+        () => {
+
+            /*
+               Scroll to the beginning first.
+            */
+
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "instant"
+            });
+
+
+            /*
+               Small delay makes sure the browser
+               registers the top position before
+               reloading the invitation.
+            */
+
+            setTimeout(() => {
+
+                window.location.reload();
+
+            }, 100);
+
+        }
+    );
+
+}
