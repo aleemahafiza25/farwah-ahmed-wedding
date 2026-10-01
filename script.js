@@ -835,34 +835,7 @@ setInterval(
    REPLAY INVITATION
 ===================================================== */
 
-const replayButton =
-    document.getElementById("replayButton");
 
-
-if (replayButton) {
-
-    replayButton.addEventListener(
-        "click",
-        () => {
-
-            /*
-                Reloading resets the complete
-                invitation state:
-
-                curtains
-                names
-                scratch card
-                petals
-                countdown
-                scroll position
-            */
-
-            window.location.reload();
-
-        }
-    );
-
-}
 
 /* =====================================================
    MUSIC CONTROL
