@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Wedding Invitation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Great+Vibes&display=swap"
+    rel="stylesheet"
+>
+</head>
+
+<body>
+
+    <button
+    id="musicButton"
+    class="music-button"
+    type="button"
+    aria-label="Pause music"
+>
+    ♪
+</button>
+
+    <main class="opening" id="opening">
+
+        <!-- PALACE BEHIND THE CURTAINS -->
+        <div class="hall">
+            <img src="assets/frame06-fully-open.jpg" alt="">
+        </div>
+
+
+        <!-- LEFT CURTAIN -->
+        <div class="curtain curtain-left">
+            <div class="curtain-art"></div>
+        </div>
+
+
+        <!-- RIGHT CURTAIN -->
+        <div class="curtain curtain-right">
+            <div class="curtain-art"></div>
+        </div>
+
+
+        <!-- DARKNESS -->
+        <div class="darkness"></div>
+
+
+        <!-- GOLDEN LIGHT -->
+        <div class="gold-light"></div>
+
+
+        <!-- TAP SCREEN -->
+        <div class="tap-screen" id="tapScreen">
+
+            <p>A BEAUTIFUL JOURNEY</p>
+
+            <div class="ornament">✦</div>
+
+            <button id="openButton">
+                TAP TO OPEN
+            </button>
+
+            <div class="ornament">✦</div>
+
+        </div>
+
+
+        <!-- WELCOME -->
+<div class="welcome" id="welcome">
+
+    <!-- BISMILLAH -->
+    <div class="bismillah">
+        ﷽
+    </div>
+
+    <!-- SMALL INVITATION LINE -->
+    <p class="invite-line">
+        WE REQUEST THE HONOUR OF YOUR
+        <br>
+        PRESENCE AT THE WEDDING OF
+    </p>
+
+    <!-- BRIDE -->
+    <div class="bride-name">
+        Raisha Maimoona
+    </div>
+
+    <!-- AND -->
+    <div class="and">
+        &
+    </div>
+
+    <!-- GROOM -->
+    <div class="groom-name">
+        Sufiyan
+    </div>
+
+    <!-- FINAL LINE -->
+    <span class="wedding-line">
+        AS THEY BEGIN THEIR JOURNEY TOGETHER
+    </span>
+
+</div>
+
+<!-- FIRST PAGE SCROLL INDICATOR -->
+
+<div class="first-scroll-indicator">
+
+    <span>
+        SCROLL TO EXPLORE
+    </span>
+
+    <b>
+        ↓
+    </b>
+
+</div>
+
+    </main>
+
+<audio
+    id="backgroundMusic"
+    src="assets/ishqhai.mp3"
+    loop
+    preload="auto">
+</audio>
+
+<!-- =========================================
+     SCRATCH TO REVEAL
+========================================= -->
+
+<!-- =========================================
+     DATE REVEAL
+========================================= -->
+
+<div class="page-end-decoration">
+
+    <img
+        src="assets/page-divider.png"
+        alt=""
+    >
+
+</div>
+
+<section class="date-reveal-section">
+
+
+
+    <div class="date-reveal-inner">
+
+        <p class="date-kicker">
+            A DATE TO HOLD CLOSE
+        </p>
+
+        <h2>
+            Scratch to Reveal
+        </h2>
+
+        <p class="scratch-instruction">
+            Use your finger or cursor to uncover the moment.
+        </p>
+
+
+        <!-- SCRATCH AREA -->
+
+        <div class="scratch-frame">
+
+            <!-- WHAT IS UNDER THE SCRATCH -->
+            <div class="hidden-date">
+
+                <p class="hidden-label">
+                    YOU'RE INVITED!
+                </p>
+
+                <div class="hidden-date-number">
+                    22
+                </div>
+
+                <div class="hidden-month">
+                    OCTOBER 2026
+                </div>
+
+                <div class="hidden-day">
+                    THURSDAY
+                </div>
+
+                <div class="hidden-divider">
+                    ✦
+                </div>
+
+                <p class="hidden-event">
+                    NIKAH · 11:30 AM
+                </p>
+
+                <p class="hidden-lunch">
+                    Lunch after Nikah till 2:00 PM
+                </p>
+
+            </div>
+
+
+            <!-- ORNAMENTAL FRAME -->
+            <img
+                class="scratch-border"
+                src="assets/scratch-frame.png"
+                alt=""
+            >
+
+
+            <!-- SCRATCHABLE SURFACE -->
+            <canvas
+                id="scratchCanvas"
+            ></canvas>
+
+        </div>
+
+
+        <p class="scratch-hint">
+            Scratch gently to reveal
+        </p>
+
+    </div>
+
+    <!-- FALLING PETALS -->
+
+    
+ 
+</section>
+
+<!-- =========================================
+     COUNTDOWN PAGE
+========================================= -->
+<div class="page-end-decoration">
+
+    <img
+        src="assets/page-divider.png"
+        alt=""
+    >
+
+</div>
+<section class="countdown-section" id="countdownSection">
+
+    <!-- TOP FLORAL -->
+
+
+
+    <div class="countdown-inner">
+
+        <p class="countdown-kicker">
+            UNTIL WE SAY QUBOOL HAI
+        </p>
+
+
+        <h2>
+            Counting every heartbeat
+        </h2>
+
+
+        <div class="countdown-ornament">
+            <span></span>
+            <b>◇</b>
+            <span></span>
+        </div>
+
+
+        <!-- COUNTDOWN -->
+
+        <div class="countdown-grid">
+
+            <div class="countdown-item">
+
+                <strong id="days">
+                    00
+                </strong>
+
+                <span>
+                    DAYS
+                </span>
+
+            </div>
+
+
+            <div class="countdown-item">
+
+                <strong id="hours">
+                    00
+                </strong>
+
+                <span>
+                    HOURS
+                </span>
+
+            </div>
+
+
+            <div class="countdown-item">
+
+                <strong id="minutes">
+                    00
+                </strong>
+
+                <span>
+                    MINUTES
+                </span>
+
+            </div>
+
+
+            <div class="countdown-item">
+
+                <strong id="seconds">
+                    00
+                </strong>
+
+                <span>
+                    SECONDS
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM FLORAL -->
+
+    <div class="countdown-floral countdown-floral-bottom">
+
+        <img
+            src="assets/page-end.png"
+            alt=""
+        >
+
+    </div>
+
+</section>
+
+<div class="page-end-decoration">
+
+    <img
+        src="assets/page-divider.png"
+        alt=""
+    >
+
+</div>
+<!-- =========================================
+     PAGE : A BLESSED BEGINNING
+========================================= -->
+
+<section class="blessed-beginning">
+
+   <div class="blessed-inner">
+
+    <p class="section-kicker">
+        A BLESSED BEGINNING
+    </p>
+
+    <h2>
+        Together with
+        <br>
+        the blessings of Allah
+    </h2>
+
+    <div class="blessed-ornament">
+        <span></span>
+        <b>◇</b>
+        <span></span>
+    </div>
+
+    <p class="blessed-text">
+        With hearts full of gratitude, we warmly invite
+        you to join us as we celebrate this beautiful
+        beginning with the love, prayers and blessings
+        of our families.
+    </p>
+
+    <div class="blessed-names">
+
+        <span>
+            Raisha Maimoona
+        </span>
+
+        <small>
+            &
+        </small>
+
+        <span>
+            Sufiyan
+        </span>
+
+    </div>
+
+
+
+    <p class="blessed-closing">
+        Your presence, prayers and blessings
+        will make this occasion even more special.
+    </p>
+
+</div>
+
+
+    <!-- PAGE END FLORAL -->
+
+
+</section>
+
+<div class="page-end-decoration">
+
+    <img
+        src="assets/page-divider.png"
+        alt=""
+    >
+
+</div>
+
+<!-- =========================================
+     PAGE 3 : WEDDING DAY
+========================================= -->
+
+<!-- =========================================
+     PAGE : THE CELEBRATION
+========================================= -->
+
+<!-- =========================================
+     CELEBRATION PAGE
+========================================= -->
+
+<section class="celebration-page">
+
+
+    <div class="celebration-inner">
+
+        <p class="section-kicker">
+            THE CELEBRATION
+        </p>
+
+        <h2>
+            A Day to Remember
+        </h2>
+
+        <div class="celebration-ornament">
+            <span></span>
+            <b>◇</b>
+            <span></span>
+        </div>
+
+        <p class="celebration-intro">
+            A beautiful day, shared with the people
+            who make our lives meaningful.
+        </p>
+
+
+        <div class="celebration-event">
+
+            <div class="event-number">
+                01
+            </div>
+
+            <div class="event-content">
+
+                <p class="event-kicker">
+                    THE NIKAH
+                </p>
+
+                <h3>
+                    11:30 AM
+                </h3>
+
+                <p>
+                    Thursday · 22 October 2026
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="celebration-event">
+
+            <div class="event-number">
+                02
+            </div>
+
+            <div class="event-content">
+
+                <p class="event-kicker">
+                    FOLLOWED BY
+                </p>
+
+                <h3>
+                    Lunch
+                </h3>
+
+                <p>
+                    After Nikah till 2:00 PM
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="celebration-note">
+
+            <span>✦</span>
+
+            <p>
+                Your presence and prayers
+                are a cherished part of our day.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+</section>
+<div class="page-end-decoration">
+
+    <img
+        src="assets/page-divider.png"
+        alt=""
+    >
+
+</div>
+
+<!-- =========================================
+     VENUE PAGE
+========================================= -->
+
+
+<section class="venue-section">
+
+    <div class="venue-inner">
+
+        <p class="section-kicker">
+            THE CELEBRATION AWAITS
+        </p>
+
+        <h2>
+            The Venue
+        </h2>
+
+        <div class="venue-ornament">
+            <span></span>
+            <b>◇</b>
+            <span></span>
+        </div>
+
+        <!-- VENUE IMAGE -->
+
+        <div class="venue-image">
+
+            <img
+                src="assets/frame06-fully-open.jpg"
+                alt="Wedding venue"
+            >
+
+            <div class="venue-image-shade"></div>
+
+            <div class="venue-image-caption">
+                SAGAR AUDITORIUM
+            </div>
+
+        </div>
+
+
+        <!-- VENUE NAME -->
+
+        <div class="venue-name-block">
+
+            <h3>
+                Sagar Auditorium
+            </h3>
+
+            <p>
+                Panemangalore, B.C. Road
+            </p>
+
+        </div>
+
+
+        <!-- LOCATION DETAILS -->
+
+        <div class="venue-info">
+
+            <div class="venue-info-row">
+
+                <div class="venue-info-icon">
+                    ⌖
+                </div>
+
+                <div>
+
+                    <small>
+                        LOCATION
+                    </small>
+
+                    <p>
+                        Panemangalore, B.C. Road
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="venue-info-row">
+
+                <div class="venue-info-icon">
+                    ◷
+                </div>
+
+                <div>
+
+                    <small>
+                        NIKAH
+                    </small>
+
+                    <p>
+                        11:30 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAP BUTTON -->
+
+        <a
+            class="venue-map-button"
+            href="https://www.google.com/maps/search/?api=1&query=Sagar%20Auditorium%20Panemangalore%20BC%20Road"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            VIEW ON MAP
+            <span>↗</span>
+        </a>
+
+
+        <div class="venue-bottom-note">
+
+            <span>✦</span>
+
+            <p>
+                We look forward to welcoming
+                you on our special day.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- PAGE-END FLORAL -->
+
+
+
+</section>
+
+<div class="page-end-decoration">
+
+    <img
+        src="assets/page-divider.png"
+        alt=""
+    >
+
+</div>
+
+<!-- =========================================
+     CLOSING PAGE
+========================================= -->
+
+<section class="closing-section">
+
+    <div class="closing-inner">
+
+        <div class="closing-bismillah">
+            ﷽
+        </div>
+
+        <p class="closing-kicker">
+            WITH LOVE &amp; PRAYERS
+        </p>
+
+        <h2>
+            With Best Wishes
+        </h2>
+
+        <div class="closing-ornament">
+            <span></span>
+            <b>◇</b>
+            <span></span>
+        </div>
+
+        <p class="closing-message">
+            With best wishes from
+        </p>
+
+        <div class="closing-names">
+            Relatives and Friends
+        </div>
+
+        <div class="dua-block">
+
+            <span>
+                ✦
+            </span>
+
+            <p>
+                Dua is the best present
+            </p>
+
+            <span>
+                ✦
+            </span>
+
+        </div>
+
+        <div class="closing-divider">
+            ───── ✦ ─────
+        </div>
+
+        <p class="contact-label">
+            FOR ANY ENQUIRIES
+        </p>
+
+        <a
+            class="contact-number"
+            href="tel:+919945904345"
+        >
+            +91 99459 04345
+        </a>
+
+        <div class="closing-final">
+
+            <p>
+                May Allah bless this union
+                with love, mercy and barakah.
+            </p>
+
+            <div class="final-symbol">
+                ❦
+            </div>
+
+        </div>
+
+<div class="replay-wrap">
+
+    <button
+        id="replayButton"
+        type="button"
+    >
+        REPLAY INVITATION
+        <span>↗</span>
+    </button>
+
+</div>
+
+    </div>
+
+
+    <!-- END FLORAL -->
+
+
+
+</section>
+
+
+
+<div
+    class="petal-container"
+    id="petalContainer">
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
