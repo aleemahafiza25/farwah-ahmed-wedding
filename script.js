@@ -31,7 +31,7 @@ button.addEventListener("click", () => {
 
     if (backgroundMusic) {
 
-        backgroundMusic.volume = 0.50;
+        backgroundMusic.volume = 1;
 
         backgroundMusic
             .play()
