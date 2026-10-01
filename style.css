@@ -5364,9 +5364,13 @@ body.site-unlocked {
     border: 1px solid
         rgba(126, 76, 64, .55);
 
-    background: transparent;
+    background:
+        #F3E5CF !important;
 
-    color: #642328;
+    color:
+         #571820 !important;
+        
+        
 
     font-family:
         Georgia,
@@ -5397,10 +5401,10 @@ body.site-unlocked {
 #replayButton:hover {
 
     background:
-        #642328;
+        #571820 !important;
 
     color:
-        #f3e5cf;
+        #F3E5CF !important;
 
     transform:
         translateY(-2px);
@@ -7008,4 +7012,1143 @@ body.site-unlocked {
 
     }
 
+}
+
+/* =========================================================
+   REFINED VENUE PAGE
+========================================================= */
+
+.venue-section {
+
+    position: relative;
+
+    min-height: auto;
+
+    padding:
+        110px 22px 145px;
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #F7ECDD 0%,
+            #F3E5CF 52%,
+            #EEDFC9 100%
+        ) !important;
+
+    color:
+        #571820;
+
+    overflow:
+        visible;
+}
+
+
+.venue-inner {
+
+    position: relative;
+
+    z-index: 5;
+
+    width:
+        min(100%, 500px);
+
+    margin:
+        auto;
+}
+
+
+/* =========================================================
+   TOP TEXT
+========================================================= */
+
+.venue-section .section-kicker {
+
+    margin-bottom:
+        12px;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        10px;
+
+    letter-spacing:
+        .32em;
+
+    color:
+        #D5B16F !important;
+}
+
+
+.venue-section h2 {
+
+    margin:
+        0;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            52px,
+            12vw,
+            74px
+        );
+
+    font-weight:
+        400;
+
+    line-height:
+        1;
+
+    color:
+        #F3DFC0 !important;
+}
+
+
+/* =========================================================
+   ORNAMENT
+========================================================= */
+
+.venue-ornament {
+
+    width:
+        150px;
+
+    margin:
+        23px auto 30px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+}
+
+
+.venue-ornament span {
+
+    flex:
+        1;
+
+    height:
+        1px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #B98A58
+        );
+}
+
+
+.venue-ornament span:last-of-type {
+
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            #B98A58
+        );
+}
+
+
+.venue-ornament b {
+
+    font-size:
+        14px;
+
+    font-weight:
+        400;
+
+    color:
+        #B98A58;
+}
+
+
+/* =========================================================
+   MAP CARD
+========================================================= */
+
+.venue-map-card {
+
+    position:
+        relative;
+
+    width:
+        min(100%, 430px);
+
+    margin:
+        0 auto;
+
+    padding:
+        8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #D1A66A,
+            #9F7140,
+            #D1A66A
+        );
+
+    box-shadow:
+        0 20px 45px
+        rgba(0,0,0,.28);
+}
+
+
+/* =========================================================
+   ARCH
+========================================================= */
+
+.venue-map-arch {
+
+    position:
+        relative;
+
+    width:
+        100%;
+
+    height:
+        clamp(
+            390px,
+            62vh,
+            500px
+        );
+
+    overflow:
+        hidden;
+
+    background:
+        #F3E5CF;
+
+    border-radius:
+        220px 220px 0 0 /
+        175px 175px 0 0;
+}
+
+
+.venue-map-arch::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        7px;
+
+    border:
+        1px solid
+        rgba(185,138,88,.7);
+
+    border-radius:
+        215px 215px 0 0 /
+        170px 170px 0 0;
+
+    z-index:
+        4;
+
+    pointer-events:
+        none;
+}
+
+
+.venue-map-arch img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    display:
+        block;
+
+    object-fit:
+        cover;
+
+    object-position:
+        center;
+
+    transform:
+        scale(1.02);
+}
+
+
+/* Soft cream tint to make the map
+   belong to the invitation */
+
+.venue-map-arch::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255,248,236,.04),
+            rgba(87,24,32,.08)
+        );
+
+    pointer-events:
+        none;
+
+    z-index:
+        3;
+}
+
+
+/* =========================================================
+   VENUE NAME
+========================================================= */
+
+.venue-name-block {
+
+    margin:
+        28px auto 25px;
+}
+
+
+.venue-name-block h3 {
+
+    margin:
+        0 0 4px;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            43px,
+            10vw,
+            62px
+        );
+
+    font-weight:
+        400;
+
+    line-height:
+        1;
+
+    color:
+        #F3DFC0 !important;
+}
+
+
+.venue-name-block p {
+
+    margin:
+        0;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        18px;
+
+    color:
+        #D8BE9D !important;
+}
+
+
+/* =========================================================
+   INFORMATION
+========================================================= */
+
+.venue-info {
+
+    width:
+        min(100%, 420px);
+
+    margin:
+        0 auto 25px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        10px;
+}
+
+
+.venue-info-row {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        14px 17px;
+
+    text-align:
+        left;
+
+    background:
+        rgba(255,247,231,.065) !important;
+
+    border:
+        1px solid
+        rgba(185,138,88,.28) !important;
+}
+
+
+.venue-info-icon {
+
+    width:
+        39px;
+
+    height:
+        39px;
+
+    flex:
+        0 0 39px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border:
+        1px solid
+        rgba(185,138,88,.55) !important;
+
+    border-radius:
+        50%;
+
+    color:
+        #D0A66B !important;
+}
+
+
+.venue-info-row small {
+
+    display:
+        block;
+
+    margin-bottom:
+        2px;
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        .22em;
+
+    color:
+        #C89A62 !important;
+}
+
+
+.venue-info-row p {
+
+    margin:
+        0;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        16px;
+
+    color:
+        #E3CEB0 !important;
+}
+
+
+/* =========================================================
+   MAP BUTTON
+========================================================= */
+
+.venue-map-button {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        11px;
+
+    padding:
+        13px 22px;
+
+    border:
+        1px solid
+        #B98A58;
+
+    background:
+        transparent;
+
+    color:
+        #F0D7AD !important;
+
+    text-decoration:
+        none;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        9px;
+
+    letter-spacing:
+        .25em;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+.venue-map-button:hover {
+
+    background:
+        #F0D7AD;
+
+    color:
+        #571820 !important;
+
+    transform:
+        translateY(-2px);
+}
+
+
+.venue-map-button span {
+
+    font-size:
+        14px;
+}
+
+
+/* =========================================================
+   BOTTOM NOTE
+========================================================= */
+
+.venue-bottom-note {
+
+    width:
+        min(100%, 310px);
+
+    margin:
+        28px auto 0;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        17px;
+
+    line-height:
+        1.6;
+
+    color:
+        #CDB498 !important;
+}
+
+
+/* =========================================================
+   PAGE DIVIDER
+========================================================= */
+
+.venue-section .page-end-decoration {
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    bottom:
+        0;
+
+    width:
+        100%;
+
+    height:
+        0;
+
+    transform:
+        translateX(-50%);
+
+    z-index:
+        100;
+
+    pointer-events:
+        none;
+}
+
+
+.venue-section .page-end-decoration img {
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    bottom:
+        -45px;
+
+    width:
+        min(96vw, 1050px);
+
+    max-height:
+        145px;
+
+    transform:
+        translateX(-50%);
+
+    display:
+        block;
+
+    object-fit:
+        contain;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .venue-section {
+
+        padding:
+            95px 17px 130px;
+    }
+
+    .venue-map-card {
+
+        width:
+            100%;
+    }
+
+    .venue-map-arch {
+
+        height:
+            430px;
+
+        border-radius:
+            190px 190px 0 0 /
+            150px 150px 0 0;
+    }
+
+}
+
+/* =========================================================
+   VENUE MAP - POINTED ARCH SHAPE
+========================================================= */
+
+.venue-map-card {
+
+    position: relative;
+
+    width: min(100%, 430px);
+
+    margin: 0 auto;
+
+    padding: 7px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #D1A66A,
+            #9F7140,
+            #D1A66A
+        );
+
+    box-shadow:
+        0 20px 45px
+        rgba(0,0,0,.28);
+
+    clip-path:
+        polygon(
+            50% 0%,
+            57% 5%,
+            67% 10%,
+            79% 17%,
+            90% 26%,
+            100% 37%,
+            100% 100%,
+            0% 100%,
+            0% 37%,
+            10% 26%,
+            21% 17%,
+            33% 10%,
+            43% 5%
+        );
+}
+
+
+.venue-map-arch {
+
+    position: relative;
+
+    width: 100%;
+
+    height:
+        clamp(
+            390px,
+            62vh,
+            500px
+        );
+
+    overflow: hidden;
+
+    background:
+        #F3E5CF;
+
+    border-radius:
+        0;
+
+    clip-path:
+        polygon(
+            50% 0%,
+            57% 5%,
+            67% 10%,
+            79% 17%,
+            90% 26%,
+            100% 37%,
+            100% 100%,
+            0% 100%,
+            0% 37%,
+            10% 26%,
+            21% 17%,
+            33% 10%,
+            43% 5%
+        );
+}
+
+
+/* Inner antique-gold border */
+
+.venue-map-arch::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 7px;
+
+    border:
+        1px solid
+        rgba(185,138,88,.72);
+
+    clip-path:
+        polygon(
+            50% 0%,
+            57% 5%,
+            67% 10%,
+            79% 17%,
+            90% 26%,
+            100% 37%,
+            100% 100%,
+            0% 100%,
+            0% 37%,
+            10% 26%,
+            21% 17%,
+            33% 10%,
+            43% 5%
+        );
+
+    z-index: 4;
+
+    pointer-events: none;
+}
+
+
+/* Map */
+
+.venue-map-arch img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transform: scale(1.02);
+}
+
+/* =========================================================
+   VENUE MAP - SQUARE VERSION
+========================================================= */
+
+.venue-map-card {
+
+    width:
+        min(100%, 430px);
+
+    aspect-ratio:
+        1 / 1;
+
+    height:
+        auto;
+
+    padding:
+        7px;
+
+    margin:
+        0 auto;
+
+    background:
+        linear-gradient(
+            135deg,
+            #843838,
+            #9F7140,
+            #D1A66A
+        );
+
+    box-shadow:
+        0 20px 45px
+        rgba(0,0,0,.28);
+
+    clip-path:
+        none;
+}
+
+
+.venue-map-arch {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    overflow:
+        hidden;
+
+    background:
+        #F3E5CF;
+
+    border-radius:
+        0;
+
+    clip-path:
+        none;
+
+    position:
+        relative;
+}
+
+
+/* Inner gold border */
+
+.venue-map-arch::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        7px;
+
+    border:
+        1px solid
+        rgba(185,138,88,.72);
+
+    z-index:
+        4;
+
+    pointer-events:
+        none;
+}
+
+
+/* Map */
+
+.venue-map-arch img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    display:
+        block;
+
+    object-fit:
+        cover;
+
+    object-position:
+        center;
+
+    transform:
+        scale(1.01);
+}
+
+
+/* =========================================================
+   VENUE PAGE - RESTORE CONTRAST
+========================================================= */
+
+.venue-section {
+    background:
+        linear-gradient(
+            to bottom,
+            #F7ECDD 0%,
+            #F3E5CF 55%,
+            #EBD9C0 100%
+        ) !important;
+
+    color: #571820 !important;
+}
+
+
+/* TOP LABEL */
+
+.venue-section .section-kicker {
+    color: #984841 !important;
+}
+
+
+/* MAIN TITLE */
+
+.venue-section h2 {
+    color: #571820 !important;
+}
+
+
+/* GOLD ORNAMENT */
+
+.venue-ornament b {
+    color: #B98A58 !important;
+}
+
+.venue-ornament span {
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #B98A58
+        ) !important;
+}
+
+.venue-ornament span:last-of-type {
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            #B98A58
+        ) !important;
+}
+
+
+/* VENUE NAME */
+
+.venue-name-block h3 {
+    color: #681D26 !important;
+}
+
+.venue-name-block p {
+    color: #765A54 !important;
+}
+
+
+/* INFO BOXES */
+
+.venue-info-row {
+    background:
+        rgba(255, 249, 238, .72) !important;
+
+    border:
+        1px solid
+        rgba(87, 24, 32, .18) !important;
+}
+
+
+/* INFO ICON */
+
+.venue-info-icon {
+    border:
+        1px solid
+        rgba(190, 142, 91, 0.65) !important;
+
+    color:
+        #8E6238 !important;
+}
+
+
+/* INFO LABEL */
+
+.venue-info-row small {
+    color:
+        #984841 !important;
+}
+
+
+/* INFO TEXT */
+
+.venue-info-row p {
+    color:
+        #765A54 !important;
+}
+
+
+/* MAP BUTTON */
+
+.venue-map-button {
+    color:
+        #fae3ca !important;
+
+    border:
+        1px solid
+        #B98A58 !important;
+
+    background:
+         #571820 !important;
+}
+
+.venue-map-button:hover {
+    background:
+        #571820 !important;
+
+    color:
+        #F3E5CF !important;
+}
+
+
+/* BOTTOM NOTE */
+
+.venue-bottom-note {
+    color:
+        #765A54 !important;
+}
+
+/* =========================================================
+   VENUE PAGE - CLEAN FINAL LAYOUT
+========================================================= */
+
+.venue-inner {
+    width: min(100%, 520px);
+}
+
+
+/* Make the map the visual focus */
+
+.venue-map-card {
+    width: min(100%, 450px);
+    aspect-ratio: 1 / 1;
+    margin: 6px auto 0;
+    padding: 7px;
+}
+
+
+/* Keep it truly square */
+
+.venue-map-arch {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    clip-path: none;
+}
+
+.venue-map-arch img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Stronger title */
+
+.venue-name-block {
+    margin: 25px auto 20px;
+}
+
+.venue-name-block h3 {
+    font-size: clamp(44px, 10vw, 64px);
+    line-height: 1;
+    color: #681D26 !important;
+}
+
+.venue-name-block p {
+    margin-top: 6px;
+    font-size: 18px;
+    color: #765A54 !important;
+}
+
+
+/* Hide the old info cards */
+
+.venue-info {
+    display: none !important;
+}
+
+
+/* Map button */
+
+.venue-map-button {
+    margin-top: 4px;
+    padding: 12px 22px;
+}
+
+
+/* Small closing line */
+
+.venue-bottom-note {
+    margin-top: 24px;
+    width: min(100%, 320px);
+    margin-left: auto;
+    margin-right: auto;
+    color: #765A54 !important;
+    font-size: 17px;
+    line-height: 1.55;
 }
