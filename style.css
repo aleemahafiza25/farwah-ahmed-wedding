@@ -8152,3 +8152,177 @@ body.site-unlocked {
     font-size: 17px;
     line-height: 1.55;
 }
+
+/* =========================================================
+   VENUE FINAL CONTACT
+========================================================= */
+
+.venue-contact {
+    margin:
+        32px auto 0;
+
+    text-align:
+        center;
+}
+
+.venue-contact-ornament {
+    display:
+        block;
+
+    margin-bottom:
+        11px;
+
+    font-size:
+        13px;
+
+    color:
+        #B98A58;
+}
+
+.venue-contact-label {
+    margin:
+        0 0 7px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        .25em;
+
+    color:
+        #984841 !important;
+}
+
+.venue-contact-number {
+    display:
+        inline-block;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        21px;
+
+    letter-spacing:
+        .05em;
+
+    color:
+        #571820 !important;
+
+    text-decoration:
+        none;
+}
+
+
+/* =========================================================
+   REPLAY
+========================================================= */
+
+.venue-replay {
+    margin:
+        26px auto 0;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+}
+
+.venue-replay #replayButton {
+    appearance:
+        none;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        10px;
+
+    padding:
+        12px 20px;
+
+    background:
+        transparent;
+
+    border:
+        1px solid
+        rgba(87,24,32,.42);
+
+    color:
+        #571820 !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        .24em;
+
+    cursor:
+        pointer;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+.venue-replay #replayButton:hover {
+    background:
+        #571820;
+
+    color:
+        #F3E5CF !important;
+
+    transform:
+        translateY(-2px);
+}
+
+.venue-replay #replayButton span {
+    font-size:
+        14px;
+}
+
+
+/* =========================================================
+   FINAL VENUE SPACING
+========================================================= */
+
+.venue-section {
+    padding-bottom:
+        155px !important;
+}
+
+
+@media (max-width: 600px) {
+
+    .venue-contact-number {
+        font-size:
+            19px;
+    }
+
+    .venue-section {
+        padding-bottom:
+            145px !important;
+    }
+
+}
+

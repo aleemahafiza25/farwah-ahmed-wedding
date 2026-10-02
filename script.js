@@ -2,6 +2,20 @@ const opening = document.getElementById("opening");
 const button = document.getElementById("openButton");
 const backgroundMusic =
     document.getElementById("backgroundMusic");
+
+const openingDivider =
+    document.querySelector(".page-end-decoration");
+
+
+/* Hide the first divider initially */
+
+if (openingDivider) {
+    openingDivider.style.setProperty(
+        "display",
+        "none",
+        "important"
+    );
+}
 let started = false;
 
 
@@ -52,11 +66,24 @@ button.addEventListener("click", () => {
     opening.classList.add("open");
 
 
-    setTimeout(() => {
+setTimeout(() => {
 
-        opening.classList.add("complete");
+    opening.classList.add("complete");
 
-    }, 3200);
+
+    /* Show the first divider only now */
+
+    if (openingDivider) {
+
+        openingDivider.style.setProperty(
+            "display",
+            "block",
+            "important"
+        );
+
+    }
+
+}, 3200);
 
 
     setTimeout(() => {
