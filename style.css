@@ -8326,3 +8326,31 @@ body.site-unlocked {
 
 }
 
+/* =========================================================
+   SMALLER SCRIPT HEADINGS
+========================================================= */
+
+.blessed-beginning h2 {
+    font-size: 42px !important;
+    line-height: 1.08 !important;
+}
+
+.celebration-page h2 {
+    font-size: 44px !important;
+    line-height: 1.05 !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .blessed-beginning h2 {
+        font-size: 38px !important;
+    }
+
+    .celebration-page h2 {
+        font-size: 40px !important;
+    }
+
+}
