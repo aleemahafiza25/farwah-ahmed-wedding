@@ -8336,7 +8336,7 @@ body.site-unlocked {
 }
 
 .celebration-page h2 {
-    font-size: 35px !important;
+    font-size: 32px !important;
     line-height: 1.05 !important;
 }
 
@@ -8346,7 +8346,7 @@ body.site-unlocked {
 @media (max-width: 600px) {
 
     .blessed-beginning h2 {
-        font-size: 30px !important;
+        font-size: 32px !important;
     }
 
     .celebration-page.celebration-inner h2 {
