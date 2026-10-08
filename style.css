@@ -13,7 +13,7 @@ body {
 body {
     overflow-x: hidden;
     overflow-y: auto;
-    background: #120204;
+    background: #fcf4f5;
 }
 
 
@@ -2624,6 +2624,8 @@ body.site-unlocked {
     opacity:
         .98;
 
+        background: transparent !important;
+
 }
 
 /* =========================================================
@@ -2636,7 +2638,7 @@ body.site-unlocked {
 
     width: 100%;
 
-    min-height: 100svh;
+    min-height: 90svh;
 
     display: flex;
 
@@ -3031,7 +3033,7 @@ body.site-unlocked {
     .countdown-section {
 
         min-height:
-            100svh;
+            90svh;
 
     }
 
@@ -5909,7 +5911,7 @@ body.site-unlocked {
 .countdown-section {
 
     min-height:
-        100svh;
+        90svh;
 
 }
 
@@ -8828,3 +8830,22 @@ body.site-unlocked {
     }
 
 }
+
+@media (max-width: 650px) {
+    .countdown-section {
+        margin-top: 30px !important;
+    }
+}
+
+.countdown-bottom-floral img {
+    background: transparent !important;
+}
+
+/* Remove gap between scratch page and countdown */
+/* .date-reveal-section {
+    margin-bottom: 0 !important;
+}
+
+.countdown-section {
+    margin-top: 0 !important;
+} */
