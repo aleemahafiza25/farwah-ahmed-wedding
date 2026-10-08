@@ -2188,8 +2188,8 @@ body.site-unlocked {
     left: 50%;
     top: 50%;
 
-    width: 120%;
-    height: 120%;
+    width: 130%;
+    height: 130%;
 
     transform:
         translate(-50%, -50%);
@@ -8849,3 +8849,28 @@ body.site-unlocked {
 .countdown-section {
     margin-top: 0 !important;
 } */
+
+/* ================================
+   SCRATCH BOARD SIZE
+   ================================ */
+
+/* .scratch-frame {
+    width: 100% !important;
+    max-width: 714px !important;
+    margin: 0 auto !important;
+    position: relative;
+}
+
+.scratch-border {
+    display: block !important;
+    width: 100% !important;
+    max-width: 714px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+} */
+
+@media (max-width: 600px) {
+    .hidden-date {
+        transform: translateY(-12px);
+    }
+}
