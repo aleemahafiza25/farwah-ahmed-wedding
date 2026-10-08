@@ -12,7 +12,7 @@ body {
 
 body {
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
     background: #120204;
 }
 
@@ -8679,4 +8679,152 @@ body.site-unlocked {
     transform: none !important;
     display: block;
     object-fit: contain;
+}
+
+
+
+/* =========================================================
+   FINAL MOBILE RESPONSIVE FIX
+   Farwah & Ahmed Wedding Invitation
+========================================================= */
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .opening {
+        min-height: 650px;
+    }
+
+    .curtain {
+        width: 50%;
+    }
+
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 800px) {
+
+    .opening {
+        max-width: 520px;
+        margin: auto;
+
+        box-shadow:
+            0 0 100px rgba(0,0,0,.85);
+    }
+
+}
+
+
+/* =========================================
+   FIX MOBILE CURTAIN
+========================================= */
+
+@media (max-width: 600px) {
+
+    .opening {
+        width: 100%;
+        height: 100svh;
+        min-height: 650px;
+        max-width: none !important;
+        margin: 0 !important;
+    }
+
+    .curtain {
+        width: 50% !important;
+        height: 100% !important;
+        max-width: none !important;
+    }
+
+    .curtain-art {
+        width: 200% !important;
+        height: 100% !important;
+        max-width: none !important;
+
+        background-size: 200% 100% !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .curtain-left .curtain-art {
+        left: 0 !important;
+        right: auto !important;
+        background-position: left center !important;
+    }
+
+    .curtain-right .curtain-art {
+        right: 0 !important;
+        left: auto !important;
+        background-position: right center !important;
+    }
+
+}
+
+/* =========================================================
+   MOBILE OPENING FIX
+   Keep the curtain full-screen like the original version
+========================================================= */
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden !important;
+    }
+
+    .opening {
+        position: relative !important;
+        width: 100% !important;
+        height: 100svh !important;
+        min-height: 650px !important;
+        max-width: none !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .curtain {
+        position: absolute !important;
+        top: 0 !important;
+        width: 50% !important;
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .curtain-art {
+        position: absolute !important;
+        top: 0 !important;
+        width: 200% !important;
+        height: 100% !important;
+        background-size: 200% 100% !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .curtain-left {
+        left: 0 !important;
+    }
+
+    .curtain-right {
+        right: 0 !important;
+    }
+
+    .curtain-left .curtain-art {
+        left: 0 !important;
+        right: auto !important;
+        background-position: left center !important;
+    }
+
+    .curtain-right .curtain-art {
+        right: 0 !important;
+        left: auto !important;
+        background-position: right center !important;
+    }
+
 }
