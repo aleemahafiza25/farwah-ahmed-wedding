@@ -2,7 +2,7 @@ const opening = document.getElementById("opening");
 const button = document.getElementById("openButton");
 const backgroundMusic =
     document.getElementById("backgroundMusic");
-
+backgroundMusic.volume = 0.4;
 const openingDivider =
     document.querySelector(".page-end-decoration");
 
@@ -45,7 +45,7 @@ button.addEventListener("click", () => {
 
     if (backgroundMusic) {
 
-        backgroundMusic.volume = 1;
+        backgroundMusic.volume = 0.4;
 
         backgroundMusic
             .play()
@@ -742,7 +742,7 @@ petal.style.setProperty(
 
 const countdownTarget =
     new Date(
-        "2026-10-22T11:30:00+05:30"
+        "2026-11-20T00:00:00+04:00"
     ).getTime();
 
 
@@ -998,5 +998,73 @@ if (replayButton) {
 
         }
     );
+
+}
+
+
+// =========================================
+// RSVP GOOGLE SHEET
+// =========================================
+// =========================================
+// RSVP
+// =========================================
+
+const RSVP_URL =
+    "https://script.google.com/macros/s/AKfycbxb7QP2oEjqqZClj8jA6lKvJ8fWjrVE8FMAoxfHkX76AtNruVowDH9HpSJaPHiTjz4Aug/exec";
+
+const rsvpForm = document.getElementById("rsvpForm");
+
+if (rsvpForm) {
+
+    rsvpForm.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+        event.stopImmediatePropagation();
+
+        const submitButton =
+            document.getElementById("rsvpSubmit");
+
+        const status =
+            document.getElementById("rsvpStatus");
+
+        submitButton.disabled = true;
+        submitButton.textContent = "SUBMITTING...";
+
+        const formData = new FormData(rsvpForm);
+
+        const data = new URLSearchParams();
+
+        data.append("name", formData.get("name") || "");
+        data.append("attendance", formData.get("attendance") || "");
+        data.append("guests", formData.get("guests") || "");
+        data.append("message", formData.get("message") || "");
+
+        try {
+
+            await fetch(RSVP_URL, {
+                method: "POST",
+                mode: "no-cors",
+                body: data
+            });
+
+            rsvpForm.reset();
+
+            status.textContent =
+                "Thank you for your response. We look forward to celebrating with you!";
+
+            submitButton.textContent = "RSVP SUBMITTED";
+
+        } catch (error) {
+
+            console.error(error);
+
+            status.textContent =
+                "Something went wrong. Please try again.";
+
+            submitButton.disabled = false;
+            submitButton.textContent = "SUBMIT RSVP";
+        }
+
+    });
 
 }
