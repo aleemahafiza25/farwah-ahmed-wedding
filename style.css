@@ -8874,3 +8874,17 @@ body.site-unlocked {
         transform: translateY(-12px);
     }
 }
+
+/* Fine-tune scratch page spacing */
+.scratch-instruction {
+    transform: translateY(-15px);
+}
+
+.scratch-hint {
+    transform: translateY(15px);
+}
+
+/* Slightly lower the celebration title */
+.celebration-page h2 {
+    transform: translateY(15px);
+}
